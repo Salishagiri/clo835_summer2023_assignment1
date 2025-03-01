@@ -55,7 +55,7 @@ jobs:
             echo "Web Service failed to start!"
             exit 1
           fi
-
+#Updating assignment 1 to 2
       - name: Cleanup and Push Web Service Image
         run: |
           docker stop web-service mysql-db

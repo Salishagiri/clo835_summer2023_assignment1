@@ -1,10 +1,10 @@
 name: Deploy Web Service and MySQL to ECR
-
+#assignment 2
 on:
   push:
     branches:
       - main
-#assignment1 update feb 28
+
 jobs:
   deploy:
     name: Build & Push Images to ECR
@@ -61,3 +61,5 @@ jobs:
           docker rm web-service mysql-db
           docker network rm app-network
           docker push $ECR_REGISTRY/$ECR_REPO:$WEB_SERVICE_TAG
+
+          
